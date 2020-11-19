@@ -27,7 +27,6 @@ export default class Blank extends React.Component {
 
   render = () => (
     <View>
-      <Text style={styles.Text_3}>Sample text content</Text>
       <Button
         title="Press me!"
         style={styles.Button_2}
@@ -111,5 +110,8 @@ const styles = StyleSheet.create({
     lineHeight: 42,
     letterSpacing: 39
   },
+
+  Button_2: { textAlign: "right", textAlignVertical: "top" },
+  View_1: {},
   Button_2: { textAlign: "right", textAlignVertical: "top" }
 })
