@@ -124,5 +124,19 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     letterSpacing: 6
   },
+
+  CheckBox_9: {},
+  View_1: {},
+  Button_2: { textAlign: "right", textAlignVertical: "top" },
+  Text_3: { width: "100%" },
+  TextInput_4: { textAlign: "right" },
+  TextInput_5: { textAlign: "center" },
+  TextInput_6: { height: 100, textAlign: "right" },
+  Switch_7: { textAlign: "right" },
+  CheckBox_8: {
+    textDecorationLine: "underline overline",
+    lineHeight: 20,
+    letterSpacing: 6
+  },
   CheckBox_9: {}
 })
