@@ -23,7 +23,14 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_4: "", TextInput_5: "", TextInput_6: "" }
+  state = {
+    TextInput_4: "",
+    TextInput_5: "",
+    TextInput_6: "",
+    Switch_7: true,
+    CheckBox_8: true,
+    CheckBox_9: true
+  }
 
   render = () => (
     <View>
@@ -41,17 +48,33 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         style={styles.TextInput_5}
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
       <TextInput
         placeholder="Sample text input placeholder"
-        multiline={true}
         style={styles.TextInput_6}
         value={this.state.TextInput_6}
         onChangeText={nextValue => this.setState({ TextInput_6: nextValue })}
+      />
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        style={styles.Switch_7}
+        value={this.state.Switch_7}
+        onValueChange={nextChecked => this.setState({ Switch_7: nextChecked })}
+      />
+      <CheckBox
+        title="Radio button"
+        checkedIcon="dot-circle-o"
+        uncheckedIcon="circle-o"
+        checked={this.state.CheckBox_8}
+        onPress={nextChecked => this.setState({ CheckBox_8: nextChecked })}
+      />
+      <CheckBox
+        title="Checkbox"
+        checked={this.state.CheckBox_9}
+        onPress={nextChecked => this.setState({ CheckBox_9: nextChecked })}
       />
     </View>
   )
@@ -62,10 +85,20 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Button_2: { textAlign: "right" },
   Text_3: { width: "100%" },
   TextInput_4: { textAlign: "right" },
   TextInput_5: { textAlign: "center" },
-  TextInput_6: { textAlign: "right" }
+  TextInput_6: { textAlign: "right" },
+  View_1: {},
+  Button_2: { textAlign: "right", textAlignVertical: "top" },
+  Text_3: { width: "100%" },
+  TextInput_4: { textAlign: "right" },
+  TextInput_5: { textAlign: "center" },
+  TextInput_6: { height: 100, textAlign: "right" },
+  Switch_7: { alignSelf: "flex-start" },
+  CheckBox_8: {},
+  CheckBox_9: {}
 })
