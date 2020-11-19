@@ -32,7 +32,6 @@ export default class Blank extends React.Component {
     <View>
       <TextInput
         placeholder="Sample text input placeholder"
-        multiline={true}
         style={styles.TextInput_2}
         value={this.state.TextInput_2}
         onChangeText={nextValue => this.setState({ TextInput_2: nextValue })}
@@ -46,9 +45,17 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   TextInput_2: {
     overflow: "scroll",
+    textAlign: "center",
+    textDecorationLine: "underline",
+    textTransform: "uppercase"
+  },
+  View_1: {},
+  TextInput_2: {
+    overflow: "visible",
     textAlign: "center",
     textDecorationLine: "underline",
     textTransform: "uppercase"
