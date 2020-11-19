@@ -48,14 +48,12 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         style={styles.TextInput_5}
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
       <TextInput
         placeholder="Sample text input placeholder"
-        multiline={true}
         style={styles.TextInput_6}
         value={this.state.TextInput_6}
         onChangeText={nextValue => this.setState({ TextInput_6: nextValue })}
@@ -85,6 +83,21 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
+  View_1: {},
+  Button_2: { textAlign: "right", textAlignVertical: "top" },
+  Text_3: { width: "100%" },
+  TextInput_4: { textAlign: "right" },
+  TextInput_5: { textAlign: "center" },
+  TextInput_6: { height: 100, textAlign: "right" },
+  Switch_7: { alignSelf: "flex-start" },
+  CheckBox_8: {
+    textDecorationLine: "underline overline",
+    lineHeight: 20,
+    letterSpacing: 6
+  },
+
+  CheckBox_9: {},
   View_1: {},
   Button_2: { textAlign: "right", textAlignVertical: "top" },
   Text_3: { width: "100%" },
