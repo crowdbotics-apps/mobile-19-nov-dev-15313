@@ -8,6 +8,28 @@ const mobilenovAPI = axios.create({
   baseURL: "https://mobile-19-nov-dev-15313.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
+function api_v1_bfdngd_list(action) {
+  return mobilenovAPI.get(`/api/v1/bfdngd/`)
+}
+function api_v1_bfdngd_create(action) {
+  return mobilenovAPI.post(`/api/v1/bfdngd/`, null, { data: action.data })
+}
+function api_v1_bfdngd_read(action) {
+  return mobilenovAPI.get(`/api/v1/bfdngd/${action.id}/`)
+}
+function api_v1_bfdngd_update(action) {
+  return mobilenovAPI.put(`/api/v1/bfdngd/${action.id}/`, null, {
+    data: action.data
+  })
+}
+function api_v1_bfdngd_partial_update(action) {
+  return mobilenovAPI.patch(`/api/v1/bfdngd/${action.id}/`, null, {
+    data: action.data
+  })
+}
+function api_v1_bfdngd_delete(action) {
+  return mobilenovAPI.delete(`/api/v1/bfdngd/${action.id}/`)
+}
 function api_v1_customtext_list(action) {
   return mobilenovAPI.get(`/api/v1/customtext/`)
 }
@@ -90,6 +112,12 @@ function rest_auth_user_partial_update(action) {
   return mobilenovAPI.patch(`/rest-auth/user/`, null, { data: action.data })
 }
 export const apiService = {
+  api_v1_bfdngd_list,
+  api_v1_bfdngd_create,
+  api_v1_bfdngd_read,
+  api_v1_bfdngd_update,
+  api_v1_bfdngd_partial_update,
+  api_v1_bfdngd_delete,
   api_v1_customtext_list,
   api_v1_customtext_read,
   api_v1_customtext_update,

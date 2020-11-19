@@ -356,3 +356,78 @@ export const rest_auth_user_partial_updateFailed = (error, starter) => ({
   error,
   starter
 })
+export const api_v1_bfdngd_list = () => ({ type: types.API_V1_BFDNGD_LIST })
+export const api_v1_bfdngd_listSucceeded = (response, starter) => ({
+  type: types.API_V1_BFDNGD_LIST_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_bfdngd_listFailed = (error, starter) => ({
+  type: types.API_V1_BFDNGD_LIST_FAILED,
+  error,
+  starter
+})
+export const api_v1_bfdngd_create = data => ({
+  type: types.API_V1_BFDNGD_CREATE,
+  data
+})
+export const api_v1_bfdngd_createSucceeded = (response, starter) => ({
+  type: types.API_V1_BFDNGD_CREATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_bfdngd_createFailed = (error, starter) => ({
+  type: types.API_V1_BFDNGD_CREATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_bfdngd_read = () => ({ type: types.API_V1_BFDNGD_READ })
+export const api_v1_bfdngd_readSucceeded = (response, starter) => ({
+  type: types.API_V1_BFDNGD_READ_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_bfdngd_readFailed = (error, starter) => ({
+  type: types.API_V1_BFDNGD_READ_FAILED,
+  error,
+  starter
+})
+export const api_v1_bfdngd_update = data => ({
+  type: types.API_V1_BFDNGD_UPDATE,
+  data
+})
+export const api_v1_bfdngd_updateSucceeded = (response, starter) => ({
+  type: types.API_V1_BFDNGD_UPDATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_bfdngd_updateFailed = (error, starter) => ({
+  type: types.API_V1_BFDNGD_UPDATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_bfdngd_partial_update = data => ({
+  type: types.API_V1_BFDNGD_PARTIAL_UPDATE,
+  data
+})
+export const api_v1_bfdngd_partial_updateSucceeded = (response, starter) => ({
+  type: types.API_V1_BFDNGD_PARTIAL_UPDATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_bfdngd_partial_updateFailed = (error, starter) => ({
+  type: types.API_V1_BFDNGD_PARTIAL_UPDATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_bfdngd_delete = () => ({ type: types.API_V1_BFDNGD_DELETE })
+export const api_v1_bfdngd_deleteSucceeded = (response, starter) => ({
+  type: types.API_V1_BFDNGD_DELETE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_bfdngd_deleteFailed = (error, starter) => ({
+  type: types.API_V1_BFDNGD_DELETE_FAILED,
+  error,
+  starter
+})
