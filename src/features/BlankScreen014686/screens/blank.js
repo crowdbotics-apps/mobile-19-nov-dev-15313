@@ -101,5 +101,15 @@ const styles = StyleSheet.create({
   CheckBox_9: {},
   View_1: {},
   Text_3: { width: "100%" },
+  Button_2: { textAlign: "right", textAlignVertical: "top" },
+  View_1: {},
+  Text_3: {
+    width: 85,
+    height: 100,
+    overflow: "scroll",
+    textDecorationLine: "underline",
+    lineHeight: 42,
+    letterSpacing: 39
+  },
   Button_2: { textAlign: "right", textAlignVertical: "top" }
 })
